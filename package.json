@@ -1,13 +1,14 @@
 {
-  "name": "test-ui-framework",
-  "version": "1.0.0",
+  "name": "iecho-ui-kit",
+  "version": "1.0.2",
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "publish": "webpack && npm publish"
   },
   "keywords": [],
   "author": "",
