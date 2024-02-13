@@ -1,0 +1,16 @@
+.bigBtn{
+    font-size: 50px;
+}
+
+
+.success{
+    background-color: rgb(59, 162, 59);
+}
+
+.pending{
+    background-color: rgb(59, 110, 162);
+}
+
+.rejected{
+    background-color: rgb(162, 59, 59);
+}

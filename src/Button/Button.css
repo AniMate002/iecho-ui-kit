@@ -1,0 +1,113 @@
+button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled{
+    cursor: default;
+    color: rgb(247, 247, 247);
+}
+
+button:focus{
+    outline: 4px solid rgb(181, 181, 255);
+    outline-offset: -1px;
+}
+
+.primaryBtn{
+    background-color: #1abc9c;
+
+}
+.primaryBtn:hover{
+    background-color: #3aceb0;
+}
+.primaryBtn:active{
+    background-color: #1ba489;
+}
+
+
+
+.warningBtn{
+    background-color: #f1c40f;
+}
+.warningBtn:hover{
+    background-color: #f8d754;
+}
+.warningBtn:active{
+    background-color: #c09c0e;
+}
+
+
+
+
+.defaultBtn{
+    background-color: #bdc3c7;
+}
+.defaultBtn:hover{
+    background-color: #c8d0d5;
+}
+.defaultBtn:active{
+    background-color: #99a0a5;
+}
+
+
+
+
+
+.dangerBtn{
+    background-color: #e74c3c;
+}
+.dangerBtn:hover{
+    background-color: #e56557;
+}
+.dangerBtn:active{
+    background-color: #ca4334;
+}
+
+
+
+.successBtn{
+    background-color: #2ecc71;
+}
+.successBtn:hover{
+    background-color: #57e090;
+}
+.successBtn:active{
+    background-color: #28a15a;
+}
+
+
+
+
+.inverseBtn{
+    background-color: #34495e;
+}
+.inverseBtn:hover{
+    background-color: #445a70;
+}
+.inverseBtn:active{
+    background-color: #283849;
+}
+
+
+
+.infoBtn{
+    background-color: #3498db;
+}
+.infoBtn:hover{
+    background-color: #66baf2;
+}
+.infoBtn:active{
+    background-color: #3189c4;
+}
+
+
+.disabledBtn{
+    background-color: #d1d5d8;
+}
