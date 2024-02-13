@@ -1,5 +1,4 @@
 import React, { ButtonHTMLAttributes, ReactNode } from 'react'
-import "../Reset.css"
 import "./Button.css"
 
 export type btnTypes = 'primary' | 'warning' | 'default' | 'danger' | 'success' | 'inverse' | 'info' | 'disabled'
