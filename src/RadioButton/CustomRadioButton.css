@@ -1,0 +1,36 @@
+.customRadioButton{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(242, 242, 242);
+    border: 1px solid #3498db;
+    border-radius: 100%;
+}
+
+
+.realRadioButton:checked + .customRadioButton{
+    outline: 5px solid #3498db;
+    outline-offset: -4px;
+}
+.realRadioButton:active + .customRadioButton{
+    outline: 7px solid #3498db;
+    outline-offset: -4px;
+}
+.realRadioButton:disabled + .customRadioButton{
+    background-color: rgb(243, 243, 243);
+    outline: 5px solid rgb(199, 199, 199);
+    outline-offset: -4px;
+}
+.radioButtonContainer .customRadioButton{
+    border-width: 2px;
+}
+.realRadioButton{
+    display: none;
+}
+
+
+.radioButtonContainer{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
