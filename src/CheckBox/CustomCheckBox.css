@@ -1,0 +1,40 @@
+.customCheckBox{
+    /* display: inline-block; */
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: #bdc3c7;
+    color:white;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin-right: 10px;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+.textBlack{
+    color: #34495e;
+}
+
+.textWhite{
+    color: white;
+}
+
+.realCheckbox{
+    display: none;
+}
+
+.textSemiBold{
+    font-weight: 600;
+}
+
+.realCheckbox:checked + .customCheckBox{
+    background-color: #3498db;
+}
+
+.realCheckbox:disabled + .customCheckBox{
+    background-color: #dfe2e4;
+}
