@@ -1,0 +1,83 @@
+.Dropdown{
+    min-width: 15em;
+    position: relative;
+    width: 200px;
+}
+
+.DropdownSelect {
+    background-color: #2a3f3b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #2a3f3b;
+    border-radius: 0.5em;
+    padding: 1em;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.Dropdown-clicked{
+    border: 2px solid #26489a;
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.DropdownSelect:hover{
+    background-color: #323741;
+}
+
+.DropdownCaret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.DropdownCaret-rotate{
+    transform: rotate(180deg);
+}
+
+.DropdownMenu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px solid #363a43;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: all 0.2s ease;
+    z-index: 1;
+}
+
+.DropdownMenu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.DropdownMenu li:hover{
+    background: #2a2d35;
+}
+
+.DropdownActive{
+    background: #23242a;
+}
+.DropdownMenu li.DropdownActive:hover {
+    background: #23242a; /* Reset background color for active items */
+}
+
+.DropdownMenu-open{
+    display: block;
+    opacity: 1;
+}
+

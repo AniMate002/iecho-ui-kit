@@ -21,9 +21,10 @@
     outline: 5px solid rgb(199, 199, 199);
     outline-offset: -4px;
 }
-.radioButtonContainer .customRadioButton{
-    border-width: 2px;
-}
+/* .radioButtonContainer:hover .customRadioButton{
+    outline: 2px solid #3498db;
+} */
+
 .realRadioButton{
     display: none;
 }
