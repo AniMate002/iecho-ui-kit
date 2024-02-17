@@ -10,6 +10,9 @@ import HeaderLogo from "./Header/HeaderComponents/HeaderLogo";
 import HeaderNavigation from "./Header/HeaderComponents/HeaderNavigation";
 import HeaderNavLink from "./Header/HeaderComponents/HeaderNavLink";
 import HeaderAuth from "./Header/HeaderComponents/HeaderAuth";
+import HeaderSearch from "./Header/HeaderComponents/HeaderSearch";
+import HeaderElementContainer from "./Header/HeaderComponents/HeaderElementContainer";
+import HeaderAvatar from "./Header/HeaderComponents/HeaderAvatar";
 
 import "./Reset.css"
 
@@ -26,4 +29,7 @@ export {
     HeaderAuth,
     HeaderNavLink,
     HeaderNavigation,
+    HeaderSearch,
+    HeaderElementContainer,
+    HeaderAvatar
 }
