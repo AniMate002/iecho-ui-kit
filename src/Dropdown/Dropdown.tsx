@@ -5,7 +5,7 @@ import DropdownDivider from "./DropdownDivider";
 import Input from "../Input/Input";
 
 export interface DropdownProps{
-    children?: ReactElement<typeof DropdownOption>[] | ReactElement<typeof DropdownDivider>[],
+    children?: ReactElement<typeof DropdownOption>[] | ReactElement<typeof DropdownDivider>[] | ReactElement<typeof DropdownOption> | ReactElement<typeof DropdownDivider>,
     title?: string,
 }
 

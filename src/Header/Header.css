@@ -1,0 +1,77 @@
+.HeaderLogo{
+    display: block;
+    height: fit-content;
+    max-height: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 80%;
+    margin: 0 0;
+}
+
+.HeaderContainer{
+    width: 100%;
+    background-color: #24252a;
+}
+
+.Header{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    color: white;
+
+}
+
+
+.HeaderNavigation{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: centers;
+    font-size: 16px;
+}
+
+
+.HeaderNavLink{
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.HeaderNavLink::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background-color: #3498db;
+    /* display: none; */
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.HeaderNavLink:hover{
+    color: #3498db;
+}
+
+.HeaderNavLink:hover::before{
+    /* display: block; */
+    opacity: 1;
+}
+
+.HeaderAuth{
+    padding: 15px 20px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.HeaderAuth:hover{
+    background-color: #3498db;
+    color: #24252a;
+}
