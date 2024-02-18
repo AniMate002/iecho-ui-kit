@@ -1,0 +1,48 @@
+.Navigation{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 20px;
+    width: fit-content;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #bdc3c7;
+}
+
+
+.PaginationNavBtn{
+    height: 40px;
+    width: 37px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    color: #bdc3c7;
+    cursor: pointer;
+    padding: 0;
+}
+
+.PaginationNavBtn:hover{
+    background: rgb(160, 207, 255);
+    color: white;
+}
+
+
+.PaginationNavBtn:disabled{
+    padding: 0;
+    display: inline-block;
+    font-weight: bold;
+    background: #e7e7e7;
+}
+
+.PaginationNavBtnActive{
+    background: #3399ff;
+    color: white;
+}
+
+.PaginationNavBtnActive:hover{
+    background: #3399ff;
+}

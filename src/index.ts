@@ -13,6 +13,8 @@ import HeaderAuth from "./Header/HeaderComponents/HeaderAuth";
 import HeaderSearch from "./Header/HeaderComponents/HeaderSearch";
 import HeaderElementContainer from "./Header/HeaderComponents/HeaderElementContainer";
 import HeaderAvatar from "./Header/HeaderComponents/HeaderAvatar";
+import Pagination from "./Pagination/Pagination";
+import PaginationNavBtn from "./Pagination/PaginationNavBtn";
 
 import "./Reset.css"
 
@@ -31,5 +33,7 @@ export {
     HeaderNavigation,
     HeaderSearch,
     HeaderElementContainer,
-    HeaderAvatar
+    HeaderAvatar,
+    Pagination,
+    PaginationNavBtn
 }
