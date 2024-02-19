@@ -15,6 +15,11 @@ import HeaderElementContainer from "./Header/HeaderComponents/HeaderElementConta
 import HeaderAvatar from "./Header/HeaderComponents/HeaderAvatar";
 import Pagination from "./Pagination/Pagination";
 import PaginationNavBtn from "./Pagination/PaginationNavBtn";
+import Tab from './Tab/Tab'
+import TabBtnList from "./Tab/TabComponents/TabBtnList";
+import TabContentList from "./Tab/TabComponents/TabContentList";
+import TabBtn from "./Tab/TabComponents/TabBtn";
+import TabContent from "./Tab/TabComponents/TabContent";
 
 import "./Reset.css"
 
@@ -35,5 +40,10 @@ export {
     HeaderElementContainer,
     HeaderAvatar,
     Pagination,
-    PaginationNavBtn
+    PaginationNavBtn,
+    Tab,
+    TabBtnList,
+    TabContentList,
+    TabBtn,
+    TabContent,
 }

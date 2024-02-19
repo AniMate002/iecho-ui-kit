@@ -1,0 +1,36 @@
+.TabBtnList{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.TabBtn{
+    color: #3399ff;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: fit-content;
+    border-bottom: 2px solid rgb(173, 173, 173);
+    cursor: pointer;
+}
+
+.TabBtn:active{
+    background: rgb(232, 232, 232);
+}
+
+.TabBtnActive{
+    border-bottom: 2px solid #3399ff;
+    background: rgb(242, 242, 242);
+}
+
+
+.TabContent{
+    display: none;
+    opacity: 0;
+}
+
+.TabContentActive{
+    display: block;
+    opacity: 1;
+}
