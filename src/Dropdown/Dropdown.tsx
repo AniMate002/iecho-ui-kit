@@ -4,12 +4,13 @@ import DropdownOption from "./DropdownOption";
 import DropdownDivider from "./DropdownDivider";
 import Input from "../Input/Input";
 
-export interface DropdownProps{
+export interface DropdownProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>{
     children?: ReactElement<typeof DropdownOption>[] | ReactElement<typeof DropdownDivider>[] | ReactElement<typeof DropdownOption> | ReactElement<typeof DropdownDivider>,
     title?: string,
+    className?: string
 }
 
-const Dropdown:React.FC<DropdownProps> = ({children, title, ...props}) => {
+const Dropdown:React.FC<DropdownProps> = ({children, title, className, ...props}) => {
     function openMenuHandler(e: React.MouseEvent<HTMLDivElement, MouseEvent>){
         let select = e.target as HTMLDivElement
         console.log(select.classList)
@@ -47,7 +48,7 @@ const Dropdown:React.FC<DropdownProps> = ({children, title, ...props}) => {
         }
     }
     return (
-        <div className="Dropdown" {...props}>
+        <div className={`${className ? className : ''} Dropdown`} {...props}>
             <div onClick={e => openMenuHandler(e)} className="DropdownSelect">
                 <span className="DropdownSelected">{title || "Select"}</span>
                 <span className="DropdownCaret"></span>

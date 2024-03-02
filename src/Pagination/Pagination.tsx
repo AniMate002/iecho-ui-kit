@@ -3,13 +3,14 @@ import PaginationNavBtn from "./PaginationNavBtn";
 import './Pagination.css'
 import PaginationNavNext from "./PaginationNavNext";
 
-export interface PaginationProps extends HTMLAttributes<HTMLDivElement>{
-    children?: ReactNode[] 
+export interface PaginationProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>{
+    children?: ReactNode[],
+    clasName?: string
 }
 
-const Pagination:React.FC<PaginationProps> = ({ children, ... props}) => {
+const Pagination:React.FC<PaginationProps> = ({ children, clasName, ... props}) => {
     return (
-        <nav className="Navigation" {...props}>
+        <nav className={`Navigation ${clasName ? clasName : ''}`} {...props}>
             {children}
             {/* <PaginationNavNext /> */}
         </nav>

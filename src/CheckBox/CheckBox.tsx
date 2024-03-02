@@ -1,16 +1,17 @@
 import React, { HTMLInputTypeAttribute, InputHTMLAttributes } from "react";
 import CustomCheckBox from "./CustomCheckBox";
 
-export interface CheckBoxProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface CheckBoxProps extends React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {
     checked?: boolean,
     disabled?: boolean,
     label?: string,
+    className?: string
 }
 
-const CheckBox:React.FC<CheckBoxProps> = ({checked, disabled, label, ...props}) => {
+const CheckBox:React.FC<CheckBoxProps> = ({checked, disabled, label, className, ...props}) => {
 
     return (
-        <label style={{cursor: disabled ? 'not-allowed' : 'pointer'}}>
+        <label className={className ? className : ''} style={{cursor: disabled ? 'not-allowed' : 'pointer'}}>
             <input className="realCheckbox" type="checkbox" {...props} checked={checked} disabled={disabled} />
             <CustomCheckBox disabled={disabled || false}/>
             <span className="textBlack textSemiBold">

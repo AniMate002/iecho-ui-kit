@@ -1,16 +1,5 @@
 import React, { ComponentProps, ElementType, ImgHTMLAttributes, ReactNode } from "react";
 
-// export interface HeaderAvatarProps extends ImgHTMLAttributes<HTMLImageElement>{}
-
-
-// const HeaderAvatar:React.FC<HeaderAvatarProps> = ({...props}) => {
-//     return (
-//         <div className="HeaderAvatarContainer">
-//             <img className="HeaderAvatarImg" {...props} />
-//         </div>
-//     );
-// }
-
 type HeaderAvatarOwnProps<E extends ElementType = ElementType> = {
     as?: E,
     src?: string,

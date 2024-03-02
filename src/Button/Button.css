@@ -111,3 +111,7 @@ button:focus{
 .disabledBtn{
     background-color: #d1d5d8;
 }
+
+button:disabled{
+    cursor: not-allowed;
+}

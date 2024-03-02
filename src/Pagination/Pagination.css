@@ -11,6 +11,7 @@
 
 
 .PaginationNavBtn{
+    border: none;
     height: 40px;
     width: 37px;
     color: white;
@@ -35,7 +36,8 @@
     padding: 0;
     display: inline-block;
     font-weight: bold;
-    background: #e7e7e7;
+    background: #cfe4fa;
+    cursor: not-allowed;
 }
 
 .PaginationNavBtnActive{

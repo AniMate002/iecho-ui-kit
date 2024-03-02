@@ -8,13 +8,14 @@ import HeaderSearch from "./HeaderComponents/HeaderSearch";
 import HeaderAvatar from "./HeaderComponents/HeaderAvatar";
 import HeaderElementContainer from "./HeaderComponents/HeaderElementContainer";
 
-export interface HeaderProps extends HTMLAttributes<HTMLDivElement> {
-    children?: ReactNode[]
+export interface HeaderProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+    children?: ReactNode[] | ReactNode,
+    className?: string
 }
 
-const Header:React.FC<HeaderProps> = ({children, ...props}) => {
+const Header:React.FC<HeaderProps> = ({children, className, ...props}) => {
     return (
-        <div className="HeaderContainer" {...props}>
+        <div className={`HeaderContainer ${className ? className : ''}`} {...props}>
             <header className="Header">
                 {/* <HeaderLogo as="img" src="https://ja-africa.org/wp-content/uploads/2020/02/FedEx-Logo-PNG-Transparent.png" /> */}
                 {children}
