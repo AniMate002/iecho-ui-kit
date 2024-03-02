@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build -s public"
+    "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "",
